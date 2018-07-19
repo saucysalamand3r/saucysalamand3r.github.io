@@ -1,0 +1,94 @@
+/* Portrait */
+@media all and (orientation: portrait){
+    * {
+        font-family: sans-serif;
+    }
+
+    *.focus {
+        outline: 0px;
+        outline: none;
+    }
+
+    body {
+        background: black;
+        overflow-y: scroll;
+        padding-bottom: 1em;
+    }
+
+    .registered {
+        color: white;
+        display: block;
+        /* overflow: auto;
+        overflow-y: scroll;
+        height: auto; */
+    }
+
+    #inputArea {
+        position: fixed;
+        bottom: 0;
+        color: white;
+        background: black;
+    }
+
+    #inputArea p, #inputArea input {
+        display: inline;
+    }
+
+    #inputArea input {
+        background: black;
+        border-color: #00000000;
+        border: none;
+        color: white;
+    }
+}
+
+/* Landscape */
+@media all and (orientation: landscape){
+    * {
+        font-family: sans-serif;
+    }
+
+    *.focus {
+        outline: 0px;
+        outline: none;
+    }
+    
+    body {
+        background: black;
+        overflow-y: scroll;
+        padding-bottom: 1em;
+    }
+    
+    .registered {
+        color: white;
+        display: block;
+        /* overflow: auto;
+        overflow-y: scroll;
+        height: auto; */
+    }
+    
+    #inputArea {
+        position: fixed;
+        bottom: 0;
+        color: white;
+        background: black;
+    }
+    
+    #inputArea p, #inputArea input {
+        display: inline;
+    }
+    
+    #inputArea input {
+        background: black;
+        border-color: #00000000;
+        border: none;
+        color: white;
+    }
+}
+
+#snapcode {
+    position: fixed;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
