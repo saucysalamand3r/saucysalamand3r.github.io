@@ -41,7 +41,7 @@
         color: white;
     }
 
-    input:focus {
+    #inputBox:focus {
         outline: none;
         outline: 0;
         -webkit-box-shadow: none;
@@ -93,7 +93,7 @@
         color: white;
     }
 
-    input:focus {
+    #inputBox:focus {
         outline: none;
         outline: 0;
         -webkit-box-shadow: none;
