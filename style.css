@@ -5,7 +5,7 @@
     }
 
     *.focus {
-        outline: 0px;
+        outline: 0;
         outline: none;
     }
 
@@ -40,8 +40,8 @@
         border: none;
         color: white;
     }
-   
-   input:focus {
+
+    input:focus {
         outline: none;
         outline: 0;
         -webkit-box-shadow: none;
@@ -57,7 +57,7 @@
     }
 
     *.focus {
-        outline: 0px;
+        outline: 0;
         outline: none;
     }
     
@@ -92,8 +92,8 @@
         border: none;
         color: white;
     }
-   
-   input:focus {
+
+    input:focus {
         outline: none;
         outline: 0;
         -webkit-box-shadow: none;
