@@ -109,6 +109,7 @@ function theme(cmd){
         $("*").css("color", "#A6E22E");
         $("*").css("background-color", "#272822");
         systemColor = "#F92672";
+        document.getElementById("systemName").style.color = "#F92672";
         clear();
     }
 }
