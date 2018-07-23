@@ -105,6 +105,12 @@ function theme(cmd){
         systemColor = "white";
         clear();
     }
+    if (cmd.indexOf("monokai") != -1){
+        $("*").css("color", "#A6E22E");
+        $("*").css("background-color", "#272822");
+        systemColor = "#F92672";
+        clear();
+    }
 }
 
 // Displays list of commands
