@@ -11,6 +11,8 @@ if('serviceWorker' in navigator) {
             .catch(function(err){
                 console.log("Service Worker failed to register", err)
             })
+} else {
+    console.log("serviceWorker not in navigator")
 }
 
 welcome();
