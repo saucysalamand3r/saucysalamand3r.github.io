@@ -2,6 +2,12 @@ var user = "visitor";
 var systemName = document.getElementById("systemName");
 var systemColor = "#ffffff";
 
+if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('/sw.js')
+             .then(function() { console.log("Service Worker Registered"); });
+}
+
 welcome();
 help();
 
