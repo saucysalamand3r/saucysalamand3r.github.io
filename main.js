@@ -12,7 +12,7 @@ if('serviceWorker' in navigator) {
                 console.log("Service Worker failed to register", err)
             })
 } else {
-    console.log("serviceWorker not in navigator")
+    console.log("serviceWorker not in navigator");
 }
 
 welcome();
