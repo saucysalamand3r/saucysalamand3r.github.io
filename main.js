@@ -129,7 +129,7 @@ function theme(cmd){
 
 // Displays list of commands
 function help(){
-    $(".registered").append("<div>Available Commands (all are lowercase):</div><div>help - displays this list of available commands</div><div>theme [white | light | dark | black] - changes the terminal color theme</div><div>clear - clears the terminal screen</div><div>about - displays information about Nate Wolfe</div><div>user [username] - changes username</div><div>instagram - opens instagram page for saucysalamand3r</div><div>github - opens github page for saucysalamand3r</div><div>twitter - opens twitter page for saucysalamand3r</div><div>linkedin - opens linkedin page for saucyssalamand3r</div><div>email - opens new email to saucysalamand3r</div><div>snapchat / snapcode - shows or hides snapcode to add saucysalamand3r</div>");
+    $(".registered").append("<div>Available Commands (all are lowercase):</div><div>help - displays this list of available commands</div><div>theme [white | light | dark | black] - changes the terminal color theme</div><div>clear - clears the terminal screen</div><div>about - displays information about Nate Wolfe</div><div>user [username] - changes username</div><div>instagram - opens instagram page for saucysalamand3r</div><div>github - opens github page for saucysalamand3r</div><div>twitter - opens twitter page for saucysalamand3r</div><div>linkedin - opens linkedin page for saucysalamand3r</div><div>email - opens new email to saucysalamand3r</div><div>snapchat / snapcode - shows or hides snapcode to add saucysalamand3r</div>");
 }
 
 function setUser(cmd){
