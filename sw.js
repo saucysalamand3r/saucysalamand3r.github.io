@@ -18,6 +18,22 @@ self.addEventListener('activate', function(event) {
     console.log("[ServiceWorker] activated");
    });
 
-self.addEventListener('fetch', function(event) {
-    console.log("[ServiceWorker} fetching", event.request.url);
-   });
+self.addEventListener('fetch', (event) => {
+  if (event.request.method === 'GET') {
+    event.respondWith(
+      caches.match(event.request)
+      .then((cached) => {
+        var networked = fetch(event.request)
+          .then((response) => {
+            let cacheCopy = response.clone()
+            caches.open(CACHE_NAME)
+              .then(cache => cache.put(event.request, cacheCopy))
+            return response;
+          })
+          .catch(() => caches.match(offlinePage));
+        return cached || networked;
+      })
+    )
+  }
+  return;
+});
