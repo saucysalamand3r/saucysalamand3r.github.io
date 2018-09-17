@@ -125,6 +125,13 @@ function theme(cmd){
         document.getElementById("systemName").style.color = "#F92672";
         clear();
     }
+    if (cmd.indexOf("wily") != -1){
+        $("*").css("color", "#42a5f6");
+        $("*").css("background-color", "black");
+        systemColor = "#42a5f6";
+        document.getElementById("systemName").style.color = "#42a5f6";
+        clear();
+    }
 }
 
 // Displays list of commands
